@@ -1,0 +1,753 @@
+* {
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: mont;
+    transition: 0.5s;
+}
+
+/* Font import */
+@font-face {
+    font-family: mont;
+    src: url(../fonts/MontserratAlternates-Medium.ttf);
+}
+
+/* adaptiv strike */
+@media screen and (max-width: 950px) {
+    .lp11 {
+        display: flex !important;
+    }
+
+    .cp11 {
+        display: flex !important;
+    }
+
+    .rp11 {
+        display: flex !important;
+    }
+
+    .lp {
+        display: none !important;
+    }
+
+    .rp {
+        display: none !important;
+    }
+
+    .ftr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .rp1 {
+        gap: 8px;
+    }
+
+    .tovari1 {
+        padding: 0 20px !important;
+    }
+
+    .sigma p {
+        font-size: 16px !important;
+    }
+
+    .sig p {
+        font-size: 16px !important;
+    }
+
+    .sigma {
+        padding: 10px !important;
+    }
+    
+    .flt .sig {
+        padding: 10px !important;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .rp1 a {
+        font-size: 16px !important;
+    }
+
+    .lp1{
+        display: none !important;
+    }
+
+    .calllll {
+        display: none !important;
+    }
+
+    .ftlgmn {
+        display: flex !important;
+    }
+
+    .kro1 {
+        padding-bottom: 10px;
+    }
+
+    .tvrl {
+        width: 100% !important;
+    }
+
+    .tvr1 {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .btn666 p {
+        font-size: 20px !important;
+        padding: 10px !important;
+    }
+}    
+
+@media screen and (max-width: 650px) {
+    .zak1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn666 {
+        width: 90% !important;
+    }
+
+    .btn666 p {
+        font-size: 24px !important;
+    }    
+}
+
+/* header */
+.header {
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.hdr {
+    width: 78%;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lp {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.lp a img {
+    height: 3%;
+    padding-right: 20px;
+}
+
+.lpc {
+    border-right: 3px solid #d9d9d960;
+    border-left: 3px solid #d9d9d960;
+    height: 43px;
+    display: flex;
+    gap: 30px;
+    padding: 0 15px;
+    align-items: center;
+}
+
+.lp a {
+    color: white;
+    font-size: 100%;
+}
+
+.p123 {
+    padding: 0 15px;
+}
+
+.rp {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.rp img {
+    cursor: pointer;
+}
+
+.rp button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.cp11 {
+    display: none;
+}
+
+.lp11 {
+    display: none;
+}
+
+.rp11 {
+    display: none;
+}
+
+/* banner */
+.ban {
+    width: 100%;
+    margin-top: 63px;
+    background-image: url(../1mg/banner1.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+}
+
+.ban img {
+    height: 16%;
+}
+
+.ban p {
+    color: white;
+    font-size: 180%;
+    margin: 46px 0;
+}
+
+.ban a {
+    background-color: #735184;
+    padding: 2%;
+    border-radius: 20px;
+    color: white;
+    font-size: 180%;
+    border: 2px solid #735184;
+}
+
+.ban a:hover {
+    background: transparent;
+}
+
+/* top tovarov */
+.tovari {
+    padding: 50px 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    gap: 4%;
+    flex-wrap: wrap;
+}
+
+.t1 {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 384px;
+    height: 617px;
+}
+
+.txtpos {
+    padding-top: 3%;
+    padding-left: 3%;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.txtpos a {
+    color: white;
+    font-size: 170%;
+}
+
+.t1 a img {
+    width: 100%;
+}
+
+.txtpos1 {
+    width: 100%;
+    display: flex;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.raz img {
+    width: 100%;
+}
+
+.txtpos1 p {
+    color: white;
+    font-size: 170%;
+}
+
+.imgpos {
+    display: flex;
+    gap: 1%;
+}
+
+.imgpos img {
+    cursor: pointer;
+    width: 56px;
+}
+
+.t1:hover {
+    box-shadow: 0 0 10px white;
+}
+
+/* razdeli */
+.raz a {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    background-color: black;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ftlgmn {
+    display: none;
+}
+
+.ftr {
+    width: 80%;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lp1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.lp1 a img {
+    height: 70px;
+    padding-right: 20px;
+}
+
+.lpc1 {
+    border-right: 3px solid #d9d9d960;
+    border-left: 3px solid #d9d9d960;
+    height: 71px;
+    display: flex;
+    gap: 30px;
+    padding: 0 15px;
+    align-items: center;
+}
+
+.lp1 a {
+    color: white;
+    font-size: 16px;
+}
+
+.p1231 {
+    padding: 0 15px;
+}
+
+.rp1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.rp1 a {
+    color: white;
+    font-size: 15px;
+}
+
+/* kroshki */
+.kro {
+    width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 85px;
+    margin-left: 10px;
+}
+
+.kro1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kro a {
+    font-size: 20px;
+    color: black;
+}
+
+/* .katalog */
+
+.tovari1 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+
+.t11 {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 384px;
+    height: 608px;
+}
+
+.txtpos111 {
+    padding-top: 25px;
+    padding-left: 28px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.txtpos111 a {
+    color: black;
+    font-size: 28px;
+}
+
+.txtpos11 {
+    width: 100%;
+    display: flex;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.txtpos11 p {
+    color: #735184;
+    font-size: 28px;
+}
+
+.imgpos {
+    display: flex;
+    gap: 16px;
+}
+
+.imgpos img {
+    cursor: pointer;
+    height: 52px;
+}
+
+.t11:hover {
+    box-shadow: 0 0 10px black;
+}
+
+.tov1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 35px 0;
+}
+
+/* filtri */
+.flt {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.flt .sig {
+    padding: 20px;
+    height: 58px;
+    width: 170px;
+    background: transparent;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.flt .sig:hover {
+    background-color: black;
+}
+
+.sig:hover p {
+    color: white;
+}
+
+.sigma {
+    padding: 20px;
+    height: 58px;
+    width: 170px;
+    background-color: black;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sigma p {
+    font-size: 24px;
+    color: white;
+}
+
+.sig p {
+    font-size: 24px;
+    color: black;
+}
+
+/* tovar */
+.tvr {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tvr1 {
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 25px 0;
+}
+
+.tvrl {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    align-items: center;
+    width: 68%;
+}
+
+.imt {
+    display: flex;
+    gap: 35px;
+}
+
+.imt img {
+    width: 48%;
+}
+
+.imb img {
+    width: 32%;
+}
+
+
+.imb {
+    display: flex;
+    gap: 17px;
+}
+
+.tvrp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 42px;
+    width: 445px;
+}
+
+.txtt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.txtt p {
+    color: black;
+    font-size: 36px;
+}
+
+.purp {
+    color: #735184;
+    font-size: 36px;
+}
+
+.txtm {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.bt1 {
+    width: 445px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    height: 75px;
+    cursor: pointer;
+}
+
+.bt11 {
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+}
+
+.bt11 p {
+    font-size: 36px;
+    color: white;
+}
+
+.bt2 {
+    width: 445px;
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    height: 75px;
+    padding-top: 5px;
+}
+
+.bt3 {
+    width: 329px;
+    height: 75px;
+    background-color: #735184;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.bt3 p {
+    color: white;
+    font-size: 24px;
+}
+
+.bt4 {
+    height: 75px;
+    background-color: #735184;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 104px;
+    cursor: pointer;
+}
+
+.txtb {
+    text-align: left;
+    width: 445px;
+}
+
+.txtb p {
+    color: black;
+    font-size: 24px;
+}
+
+.imgpos p {
+    color: black;
+    font-size: 30px;
+}
+
+/* корзина */
+.cor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cor1 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 10px 10px 10px;
+    align-items: center;
+    gap: -20px;
+}
+
+.xtx {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.xtx p {
+    font-size: 36px;
+}
+
+.zak {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+}
+
+.zak1 {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.xtxx {
+    display: flex;
+    gap: 10px;
+}
+
+.wht {
+    font-size: 36px;
+    color: white;
+}
+
+.purp1 {
+    font-size: 36px;
+    color: #735184;
+}
+
+.btn666 {
+    width: 28%;
+    background-color: #735184;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn666 p {
+    font-size: 34px;
+    color: white;
+}
